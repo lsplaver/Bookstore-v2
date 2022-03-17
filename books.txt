@@ -1,0 +1,4 @@
+Revival	Stephen	King	Horror	30.0	1
+The Book of Cthulu	Ross	Lockhart	Anthology	29.95	1
+Full Wolf Moon	Lincoln	Child	Thriller	9.99	1
+Murach's Java Programming 6th Edition	Joel	Murach	Programming/Java	59.5	1

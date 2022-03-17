@@ -22,8 +22,9 @@ public class BookDB
 				String authorLastName = fields[2];
 				String genre = fields[3];
 				String price = fields[4];
+				String quantity = fields[5];
 				
-				Book book = new Book(title, authorFirstName, authorLastName, genre, Double.parseDouble(price));
+				Book book = new Book(title, authorFirstName, authorLastName, genre, Double.parseDouble(price), Integer.parseInt(quantity));
 				books.add(book);
 				
 				line = in.readLine();
@@ -52,7 +53,8 @@ public class BookDB
 				out.print(book.getAuthorFirstName() + DELIMETER);
 				out.print(book.getAuthorLastName() + DELIMETER);
 				out.print(book.getGenre() + DELIMETER);
-				out.println(book.getPrice());
+				out.print(book.getPrice() + DELIMETER);
+				out.println(book.getQuantity());
 			}
 		}
 		catch (IOException e)

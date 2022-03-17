@@ -9,19 +9,21 @@ public class Book
 	private String authorLastName;
 	private String genre;
 	private double price;
+	private int quantity;
 	
 	public Book()
 	{
-		this("", "", "", "", 0.0);
+		this("", "", "", "", 0.0, 0);
 	}
 
-	public Book(String title, String authorFirstName, String authorLastName, String genre, double price) {
+	public Book(String title, String authorFirstName, String authorLastName, String genre, double price, int quantity) {
 		// TODO Auto-generated constructor stub
 		this.setTitle(title);
 		this.setAuthorFirstName(authorFirstName);
 		this.setAuthorLastName(authorLastName);
 		this.setGenre(genre);
 		this.setPrice(price);
+		this.setQuantity(quantity);
 	}
 
 	public String getTitle() {
@@ -68,4 +70,12 @@ public class Book
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         return currency.format(price);
     }
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
 }

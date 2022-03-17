@@ -9,7 +9,9 @@ public class Console
 	public static String getString(String prompt)
 	{
 		System.out.print(prompt);
-		return sc.nextLine();
+		String newString = sc.nextLine();
+		System.out.println("DEBUG: This is what was entered: " + newString);
+		return newString;
 	}
 	
 	public static int getInt(String prompt)
@@ -24,6 +26,38 @@ public class Console
 			catch (NumberFormatException e)
 			{
 				System.out.println("Error! Value must be an integer.");
+			}
+		}
+	}
+	
+	public static int getInt(String prompt, int min)
+	{
+		while(true)
+		{
+			int value = getInt(prompt);
+			if (value >= min)
+			{
+				return value;
+			}
+			else
+			{
+				System.out.println("Error! Number must be greater than or equal to " + min);
+			}
+		}
+	}
+	
+	public static int getInt(String prompt, int min, int max)
+	{
+		while (true)
+		{
+			int value = getInt(prompt);
+			if ((value >= min) && (value <= max))
+			{
+				return value;
+			}
+			else
+			{
+				System.out.println("Error! Number must be greater than or equal to " + min + " and less than or equal to " + max + " .");
 			}
 		}
 	}
