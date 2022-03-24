@@ -47,7 +47,7 @@ public class Book
 
 	/**
 	 * Method to get the title of a book object
-	 * @return - String value of the title
+	 * @return title - String value of the title
 	 */
 	public String getTitle() {
 		return title;
@@ -63,7 +63,7 @@ public class Book
 
 	/**
 	 * Method to get the author's first name
-	 * @return - String value of the author's first name
+	 * @return authorFirstName - String value of the author's first name
 	 */
 	public String getAuthorFirstName() {
 		return authorFirstName;
@@ -79,7 +79,7 @@ public class Book
 
 	/**
 	 * Method to get the author's last name
-	 * @return - String value of the author's last name
+	 * @return authorLastName - String value of the author's last name
 	 */
 	public String getAuthorLastName() {
 		return authorLastName;
@@ -95,7 +95,7 @@ public class Book
 
 	/**
 	 * Method to get the genre of a book object
-	 * @return - String value of the genre
+	 * @return genre - String value of the genre
 	 */
 	public String getGenre() {
 		return genre;
@@ -111,7 +111,7 @@ public class Book
 
 	/**
 	 * Method to get the price of a book object
-	 * @return - Double value of the price
+	 * @return price - Double value of the price
 	 */
 	public double getPrice() {
 		return price;
@@ -127,7 +127,7 @@ public class Book
 
 	/**
 	 * Method to get the price value as a formatted string
-	 * @return - String formatted value of the book's price
+	 * @return currency.format(price) - String formatted value of the book's price
 	 */
 	public String getPriceFormatted() {
         NumberFormat currency = NumberFormat.getCurrencyInstance();
@@ -136,7 +136,7 @@ public class Book
 
 	/**
 	 * Method to get the quantity of a book object
-	 * @return - Integer value of the quantity
+	 * @return quantity - Integer value of the quantity
 	 */
 	public int getQuantity() {
 		return quantity;
