@@ -2,6 +2,10 @@ package bookstore;
 
 import java.text.NumberFormat;
 
+/**
+ * @author Lawrence Splaver
+ * @version 2
+ */
 public class Book
 {
 	/**
